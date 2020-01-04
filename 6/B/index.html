@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div id="header">
+        <img src="img/logo.png" alt="logo">
+        <span><b>ARKADEMY</b> COFFE SHOP</span>
+        <a href="javascript:void(0)">ADD</a>
+    </div>
+    <div id="main">
+        <div id="topTable">
+            <div id="topNo">No</div>
+            <div id="topCashier">Cashier</div>
+            <div id="topProduct">Product</div>
+            <div id="topCategory">Category</div>
+            <div id="topPrice">Price</div>
+            <div id="topAction">Action</div>
+        </div>
+        <ul id="table">
+            <ul class="list" id="1">
+                <li>1</li>
+                <li>Pevita Pearce</li>
+                <li>Latte</li>
+                <li>Drink</li>
+                <li>Rp. 12.000</li>
+                <li><a href="javascript:void(0)">Edit</a> | <a href="javascript:void(0)">Delete</a></li>
+            </ul>
+            <ul class="list" id="cashier">
+                <li>2</li>
+                <li>Raisa Andriana</li>
+                <li>Cake</li>
+                <li>Food</li>
+                <li>Rp. 15.000</li>
+                <li><a href="javascript:void(0)">Edit</a> | <a href="javascript:void(0)">Delete</a></li>
+            </ul>
+            <ul class="list" id="product">
+                <li>3</li>
+                <li>Raisa Andriana</li>
+                <li>Fried Rice</li>
+                <li>Food</li>
+                <li>Rp. 30.000</li>
+                <li><a href="javascript:void(0)">Edit</a> | <a href="javascript:void(0)">Delete</a></li>
+            </ul>
+            <ul class="list" id="category">
+                <li>4</li>
+                <li>Pevita Pearce</li>
+                <li>Gudeg</li>
+                <li>Food</li>
+                <li>Rp. 36.000</li>
+                <li><a href="javascript:void(0)">Edit</a> | <a href="javascript:void(0)">Delete</a></li>
+            </ul>
+            <ul class="list" id="price">
+                <li>5</li>
+                <li>Joko Purwhadi</li>
+                <li>Ice Tea</li>
+                <li>Drink</li>
+                <li>Rp. 10.000</li>
+                <li><a href="javascript:void(0)">Edit</a> | <a href="javascript:void(0)">Delete</a></li>
+            </ul>
+            <ul class="list" id="action">
+                <li>6</li>
+                <li>Anas Arifin</li>
+                <li>Macaron</li>
+                <li>Food</li>
+                <li>Rp. 17.000</li>
+                <li><a href="javascript:void(0)">Edit</a> | <a href="javascript:void(0)">Delete</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="popup">
+        <form action="page/edit.php" method="POST" id="edit" onsubmit="return validate()">
+            <label for="xCashier">Cashier</label>
+            <input type="text" name="xCashier" id="xCashier" required>
+                <br>
+            <label for="xProduct">Product</label>
+            <input type="text" name="xProduct" id="xProduct" required>
+                <br>
+            <label for="xCategory">Category</label>
+            <select name="xCategory" id="xCategory">
+                <option value="1">Food</option>
+                <option value="2">Drink</option>
+            </select>
+                <br>
+            <label for="xPrice">Price</label>
+            <input type="text" name="xPrice" id="xPrice" required>
+            <input type="hidden" name="id" id="xID">
+            <input type="hidden" name="idC" id="xIDc">
+            <button type="submit" name="submit" id="change">Change</button>
+            <a href="javascript:void(0)"><img src="img/close.png" alt="close" class="close"></a>
+        </form>
+    </div>
+    <div id="popup-del">
+        <span>Are you sure?</span>
+        <button type="submit">Delete</button>
+        <a href="javascript:void(0)"><img src="img/close.png" alt="close" class="close"></a>
+    </div>
+    <div id="popup-bg"></div>
+    <script src="/assets/script.js"></script>
+</body>
+</html>

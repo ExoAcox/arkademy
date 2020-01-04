@@ -1,0 +1,35 @@
+// Membuat database
+CREATE DATABASE database_name
+
+// Masuk ke database
+USE database_name
+
+// Membuat table product
+CREATE TABLE product (
+id INT(11) AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+price INT(11),
+id_category INT(11),
+id_cashier INT(11)
+) ENGINE=INNODB
+
+// Membuat table category
+CREATE TABLE category (
+id INT(11) AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100)
+) ENGINE=INNODB
+
+// Membuat table cashier
+CREATE TABLE cashier (
+id INT(11) AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100)
+) ENGINE=INNODB
+
+// Melakukan query yang diminta
+SELECT c.name, p.name, t.name, p.price, p.id, p.id_cashier
+FROM product AS p
+LEFT JOIN cashier AS c
+ON p.id_cashier = c.id
+LEFT JOIN category AS t
+ON p.id_category = t.id
+

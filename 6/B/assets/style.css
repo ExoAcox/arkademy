@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+li {
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
+#header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, .3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header img {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    height: 60px;
+}
+#header span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    line-height: 75px;
+    font-weight: bold;
+}
+#header span b {
+    color: #03A9F4;
+}
+#header a {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    width: 100px;
+    height: 45px;
+    top: 50%;
+    right: 100px;
+    padding: 0 10px;
+    transform: translateY(-50%);
+    background-color: #03A9F4;
+    border: 2px solid #03A9F4;
+    border-radius: 10px;
+    line-height: 45px;
+    color: white;
+}
+#header a:hover {
+    background-color: white;
+    color: #03A9F4;
+}
+
+@media screen and (max-width: 1050px) {
+    #header a {
+        right: 10px;
+    }
+    #header img {
+        left: 10px;
+    }
+}
+@media screen and (max-width: 775px) {
+    #header span {
+        display: none;
+    }
+}
+
+
+#main {
+    width: 80%;
+    min-height: 300px;
+    min-width: 600px;
+    max-width: 1000px;
+    background-color: white;
+    margin: 130px auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, .3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#popup, #popup-del {
+    position: fixed;
+    z-index: 99;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 350px;
+    padding: 20px;
+    font-size: 50px;
+    background-color: white;
+    border-radius: 15px;
+    transition: .5s;
+}
+#popup.show, #popup-del.show {
+    top: 50%;
+}
+#popup form * {
+    display: inline-block;
+    position: absolute;
+}
+#popup-del form *, #popup-del span, #popup-del a {
+    display: block;
+    position: absolute;
+    margin: auto;
+}
+#popup-del span {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#popup label {
+    text-align: center;
+    left: 50px;
+    margin-top: 15px;
+}
+#popup select, #popup input {
+    font-size: 20px;
+    right: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+#popup input:focus, #popup select:focus {
+    box-shadow: 0 0 1px 1.5px rgba(0, 174, 255, 0.5);
+}
+#popup input {
+    width: 250px;
+    height: 40px;
+}
+#popup select {
+    width: 272px;
+    height: 44px;
+}
+#popup button, #popup-del button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    top: 83%;
+    left: 50%;
+    color: white;
+    background-color: #03A9F4;
+    border: 2px solid #03A9F4;
+    transform: translate(-50%, -50%);
+}
+#popup-del button {
+    position: absolute;
+    top: 65%;
+}
+#popup button:hover, #popup-del button:hover {
+    background-color: white;
+    border: 2px solid #03A9F4;
+    color: #03A9F4;
+}
+#popup a, #popup-del a {
+    width: 10px;
+    height: 10px;
+    top: -25px;
+    right: 25px;
+}
+#popup img, #popup-del img {
+    width: 50px;
+}
+#popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+    transition: .5s opacity;
+}
+#popup-bg.show {
+    opacity: .75;
+    height: 100%;
+}
+#topTable, .list {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: 100%;
+    text-align: center;
+}
+#topTable {
+    height: 50px;
+    background-color: #90A4AE;
+    font-size: 20px;
+    border-radius: 10px 10px 0 0;
+}
+#table {
+    font-size: 18px;
+}
+#topTable div {
+    line-height: 50px;
+    color: white;
+}
+#topNo, li:nth-child(1) {
+    grid-column: span 1;
+}
+#topCashier, li:nth-child(2) {
+    grid-column: span 4;
+}
+#topProduct, #topPrice, #topAction, li:nth-child(3), li:nth-child(5), li:nth-child(6) {
+    grid-column: span 3;
+}
+#topCategory, li:nth-child(4) {
+    grid-column: span 2;
+}
+.hide {
+    display: none;
+}
