@@ -17,7 +17,7 @@ function biodata(name, age) {
         Javascript: 'beginner'
     }
     json.interest_in_coding = true
-    return json
+    return console.log(JSON.stringify(json))
 }
 
 biodata(name, age)      //  Input your data here
