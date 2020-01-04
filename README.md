@@ -1,2 +1,1 @@
-# arkademy
-ARKADEMY BATCH 14
+wewew
