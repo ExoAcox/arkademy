@@ -25,11 +25,11 @@ id INT(11) AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(100)
 ) ENGINE=INNODB
 
-// Melakukan query yang diminta
-SELECT c.name, p.name, t.name, p.price, p.id, p.id_cashier
-FROM product AS p
-LEFT JOIN cashier AS c
+// Melakukan query sesuai dengan yang diminta
+SELECT c.name, p.name, t.name, p.price
+FROM product p
+LEFT JOIN cashier c
 ON p.id_cashier = c.id
-LEFT JOIN category AS t
+LEFT JOIN category t
 ON p.id_category = t.id
 
