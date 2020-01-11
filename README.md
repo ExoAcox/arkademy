@@ -22,12 +22,21 @@ Untuk jawaban no. 1 s/d 5, bisa langsung dijalankan di https://es6console.com/
 * Tampilan awal
 
 
+
+
+
 ![Alt text](/6/Screenshots/1.jpg?raw=true "1")
+
+
+
+
 
 * Untuk menambah entry bisa menekan tombol add atau dengan shortcut "Space" key
 
 
 ![Alt text](/6/Screenshots/2.jpg?raw=true "2")
+
+
 
 
 
@@ -38,10 +47,14 @@ Untuk jawaban no. 1 s/d 5, bisa langsung dijalankan di https://es6console.com/
 
 
 
-* Untuk mengedit entry, tinggal klik tulisan Edit, maka form akan muncul
+
+
+* Untuk mengedit entry, tinggal klik tulisan Edit, maka akan muncul form
 
 
 ![Alt text](/6/Screenshots/4.jpg?raw=true "4")
+
+
 
 
 
@@ -52,10 +65,14 @@ Untuk jawaban no. 1 s/d 5, bisa langsung dijalankan di https://es6console.com/
 
 
 
-* Untuk menghapus entry, tinggal klik tulisan Remove, maka form akan muncul
+
+
+* Untuk menghapus entry, tinggal klik tulisan Remove, maka akan muncul dialog box
 
 
 ![Alt text](/6/Screenshots/6.jpg?raw=true "6")
+
+
 
 
 
