@@ -15,5 +15,5 @@ function passwordValidity(password) {
     return console.log(false)
 }
 
-usernameValidity(username)            //  input your email here
-passwordValidity(password)            //  input your password here
+usernameValidity(username)            //  Input your username here
+passwordValidity(password)            //  Input your password here

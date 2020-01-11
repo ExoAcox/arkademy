@@ -7,10 +7,8 @@ function findSame(data) {
     }
 
     const stringOnly = data.filter(x => typeof x == "string")
-    if (stringOnly.length == 0) {
-        return console.log("Data must be string!")
-    } else if (stringOnly.length == 1) {
-        return console.log("Data must be more than one!")
+    if (stringOnly.length <= 1) {
+        return console.log("Not Found!")
     }
     
     const sortChar = stringOnly.map(x => {return x.split("").sort().join("")})
