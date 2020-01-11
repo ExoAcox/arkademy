@@ -21,28 +21,45 @@ Untuk jawaban no. 1 s/d 5, bisa langsung dijalankan di https://es6console.com/
 
 * Tampilan awal
 
+
 ![Alt text](/6/Screenshots/1.jpg?raw=true "1")
 
 * Untuk menambah entry bisa menekan tombol add atau dengan shortcut "Space" key
 
+
 ![Alt text](/6/Screenshots/2.jpg?raw=true "2")
+
+
 
 * Tampilan ketika sukses menambah entry
 
+
 ![Alt text](/6/Screenshots/3.jpg?raw=true "3")
+
+
 
 * Untuk mengedit entry, tinggal klik tulisan Edit, maka form akan muncul
 
+
 ![Alt text](/6/Screenshots/4.jpg?raw=true "4")
+
+
 
 * Tampilan ketika sukses mengubah entry
 
+
 ![Alt text](/6/Screenshots/5.jpg?raw=true "5")
+
+
 
 * Untuk menghapus entry, tinggal klik tulisan Remove, maka form akan muncul
 
+
 ![Alt text](/6/Screenshots/6.jpg?raw=true "6")
 
+
+
 * Tampilan ketika sukses menghapus entry
+
 
 ![Alt text](/6/Screenshots/7.jpg?raw=true "7")
