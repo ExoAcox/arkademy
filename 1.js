@@ -14,10 +14,10 @@ function biodata(name, age) {
     json.skill = {
         HTML: "advanced",
         CSS: "advanced",
-        Javascript: 'beginner'
+        Javascript: 'advanced'
     }
     json.interest_in_coding = true
     return console.log(JSON.stringify(json))
 }
 
-biodata(name, age)      //  Input your data here
+biodata()      //  Input your data here

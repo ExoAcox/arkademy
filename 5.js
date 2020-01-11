@@ -1,17 +1,17 @@
-function countChar(word, letter) {
-    if (letter.length > 1) {
-        return console.log("Letter must in one digit character!")
+function randomize(number) {
+    if (typeof number != "number") {
+        return console.log("Data must be number!")
+    } else if (number <= 0) {
+        return console.log("Data must be greater than zero!")
     }
-    let count = 0
-    for (x = 0; x < word.length; x++) {
-        if (word[x] == letter) {
-            count++
-        }
+
+    let array = []
+    for (x = number; x > 0; x--) {
+        array.push(Math.ceil(Math.random() * 10))
     }
-    if (count == 0) {
-        return console.log("Not found!")
-    }
-    return console.log(count)
+    const sum = array.reduce((con, x) => {return con + x})
+    console.log("Array : [" + array + "]");
+    console.log("Sum : " + sum)
 }
 
-countChar(word, letter)     //  Input your data here
+randomize(number)       //  Input your number here

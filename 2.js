@@ -1,19 +1,19 @@
-function testEmail(email) {
-    const regEmail = /^[0-9][\w-.]*@[a-z.]+[.][a-z]{2,4}$/
-    console.log(regEmail.test(email))
+function usernameValidity(username) {
+    const regUsername = /^[a-z][a-zA-Z0-9_]{4,11}$/
+    console.log(regUsername.test(username))
 }
-function testPassword(password) {
-    const letter = password.match(/[a-z]/gi)
+function passwordValidity(password) {
+    const letter = password.match(/[A-Z]/g)
     const number = password.match(/\d/g)
-    const symbol = password.match(/[^ a-z0-9]/g)
+    const symbol = password.match(/[\W_]/g)
     if (letter == null || number == null || symbol == null) {
         return console.log(false) 
     }
-    if (letter.length == 5 && number.length == 2 && symbol.length == 2) {
+    if (letter.length == 5 && number.length == 1 && symbol.length == 1) {
         return console.log(true)
     }
     return console.log(false)
 }
 
-testEmail(email)            //  input your email here
-testPassword(password)      //  input your password here
+usernameValidity(username)            //  input your email here
+passwordValidity(password)            //  input your password here
