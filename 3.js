@@ -1,7 +1,7 @@
 function formatInput(format, ...parameters) {
     const array = [...parameters]
     const regex = /{[\d]+}/g
-    const regex2 = /\d/g
+    const regex2 = /\d+/
     
     const source = format.match(regex)
     const arrayIndex = source.map(x => {return x.match(regex2)}).flat().filter(x => x < array.length)
